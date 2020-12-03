@@ -29,7 +29,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 {
     app.UseRouting();
     // OData register authorization middleware
-    app.UseOdataAuthorization();
+    app.UseODataAuthorization();
 
     app.UseEndpoints(endpoints => {
         endpoints.MapODataRoute("odata", "odata", GetEdmModel());
